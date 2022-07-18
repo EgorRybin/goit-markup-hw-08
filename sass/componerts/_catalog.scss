@@ -1,0 +1,122 @@
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        margin: -15px;
+    }
+    @media screen and (min-width: 1200px) {
+        gap: 30px
+    }
+
+}
+
+.catalog-list__item {
+    
+    width: calc((100% - 60px) /3);
+    border: 1px solid transparent;
+
+        &:hover,
+        &:focus {
+            border: 1px solid #EEEEEE;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        }
+
+    @media screen and (max-width: 767px) {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px) /2);
+        margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 60px) /3);
+        margin: 0;
+    }
+}
+
+
+
+.catalog-list__link {
+    text-decoration: none;
+}
+
+
+.catalog-list__overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.catalog-list__img {
+    display: block;
+    width: 100%;
+    // @media screen and (max-width: 767px) {
+    //     width: 100%;
+    // }
+
+}
+
+.catalog-list__content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    padding: 63px 24px;
+
+    background-color: rgba(33, 150, 243, 0.9);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    color: $wite-color;
+
+    transition-duration: 250ms;
+    transition-timing-function: $timingFunction;
+
+        .catalog-list__item:hover &,
+        .catalog-list__item:focus & {
+            transform: translate(0);
+            transition-duration: 250ms;
+            transition-timing-function: $timingFunction;
+            pointer-events: all;
+        }
+}
+
+
+.catalog-list__box {
+    padding: 20px 24px;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+}
+
+.catalog-list__title {
+    margin-bottom: 4px;
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.catalog-list__text {
+    color: $secondary-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+
+}

@@ -1,0 +1,15 @@
+.contacts-footer__address {
+    color: $wite-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: $timingFunction;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+}

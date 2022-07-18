@@ -1,0 +1,58 @@
+.contacts-header {
+    display: flex;
+    margin-left: auto;
+}
+
+
+.contacts-header__link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: $timingFunction;
+
+        &:hover,
+        &:focus {
+            color: $accent-color;
+
+            .contacts-header__svg-mail,
+            .contacts-header__svg-tel {
+                    fill: $accent-color;
+                }
+        }
+}
+
+
+
+
+.contacts-header__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+
+.contacts-header__svg-mail {
+    margin-right: 10px;
+    fill: $secondary-text-color;
+    transition-duration: 250ms;
+    transition-timing-function: $timingFunction;
+
+}
+
+.contacts-header__svg-tel {
+    margin-right: 10px;
+    fill: $secondary-text-color;
+    transition-duration: 250ms;
+    transition-timing-function: $timingFunction;
+}
+
+
+

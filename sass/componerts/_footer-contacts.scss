@@ -1,0 +1,33 @@
+.contacts-footer {
+    display: block;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+        
+    }
+}
+
+.contacts-footer__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+
+.contacts-footer__link {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: $timingFunction;
+}
+
+
+.contacts-footer__link:hover,
+.contacts-footer__link:focus {
+    color: $accent-color;
+}

@@ -1,0 +1,53 @@
+.hero {
+    padding-top: 118px;
+    margin: 0 auto;
+    max-width: 1600px;
+    height: 400px;
+
+    background-color: $hero-bg-color;
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+@media screen and (min-width: 480px) {
+    height: 400px;
+}
+@media screen and (min-width: 768px) {
+    height: 400px;
+}
+@media screen and (min-width: 1200px) {
+    height: 600px;
+    padding-top: 200px;
+
+}
+}
+
+
+.hero__title {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+
+    color: $wite-color;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+@media screen and (min-width:480px) {
+    
+    }
+@media screen and (min-width:768px) {
+ 
+
+}
+@media screen and (min-width:1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  
+}
+}
+

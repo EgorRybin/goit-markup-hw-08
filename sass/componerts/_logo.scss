@@ -1,0 +1,36 @@
+.logo {
+    // margin-right: 93px;
+
+    color: $accent-color;
+    font-family: $fontSecondary;
+    font-weight: 700; 
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+
+@media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.2;
+    
+}
+    &.footer__logo {
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+            
+        }
+    }
+}
+
+.logo__color--prime {
+    color: $primary-text-color;
+}
+
+.footer__logo {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logo__color--second {
+    color: $wite-color;
+}
