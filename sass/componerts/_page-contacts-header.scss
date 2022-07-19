@@ -1,14 +1,21 @@
 .contacts-header {
     display: flex;
-    margin-left: auto;
+    flex-direction: column;
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        margin-left: auto;
+        
+    }
+
 }
 
 
 .contacts-header__link {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding: 5px 0;
+
 
     color: $secondary-text-color;
     font-weight: 500;
@@ -29,15 +36,22 @@
                     fill: $accent-color;
                 }
         }
+    
+        @media screen and (min-width: 1200px) {
+            padding: 30px 0;
+        }
 }
 
 
 
 
 .contacts-header__item:not(:last-child) {
-    margin-right: 50px;
-}
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
+    }
 
+
+}
 
 .contacts-header__svg-mail {
     margin-right: 10px;

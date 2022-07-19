@@ -16,6 +16,8 @@
 <body>
     <!-- шапка -->
     <header class="header">
+        <a href="./" class="logo header__logo--mobil">Web<span class="logo__color--prime">Studio</span>
+        </a>
         <!-- навигация -->
         <div class="conteiner">
             <nav class="navigation">
@@ -52,6 +54,45 @@
                     </li>
                 </ul>
             </nav>
+        </div>
+        <!-- мобильное меню -->
+    
+        <button class="mobil-btn is-open" type="button" data-menu-button aria-expanded="false"
+            aria-controls="menu container">
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="mobil-btn__close" href="/images/icons.svg#icon-close-black-18dp-2-1"></use>
+                <use class="mobil-btn__menu" href="/images/icons.svg#icon-burger"></use>
+            </svg>
+        </button>
+        <div class="mobil-menu is-open" id="menu container" data-menu>
+            <ul class="navigation-mobil list">
+                <li class="navigation-mobil__item">
+                    <a href="./index.html" class="navigation-mobil__link">Студия</a>
+                </li>
+                <li class="navigation-mobil__item">
+                    <a href="./portfolio.html" class="navigation-mobil__link-current">Портфолио</a>
+                </li>
+                <li class="navigation-mobil__item">
+                    <a class="navigation-mobil__link" href="contacts">Контакты</a>
+                </li>
+            </ul>
+    
+            <ul class="mobil-contacts list">
+                <li class="mobil-contacts__item">
+                    <a class="mobil-contacts__link" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                </li>
+                <li class="mobil-contacts__item">
+                    <a class="mobil-contacts__link" href="tel:+380961111111">
+                        +38 096 111 11 11</a>
+                </li>
+            </ul>
+            <ul class="mobil-networks list">
+                <li class="mobil-networks__item"><a class="mobil-networks__link" href="">Instagram</a></li>
+                <li class="mobil-networks__item"><a class="mobil-networks__link" href="">Twitter</a></li>
+                <li class="mobil-networks__item"><a class="mobil-networks__link" href="">Facebook</a></li>
+                <li class="mobil-networks__item"><a class="mobil-networks__link" href="">LinkedIn</a></li>
+            </ul>
         </div>
     
     
@@ -96,7 +137,7 @@
                         </div>
                         
                             <div class="catalog-list__box">
-                                <h2 class="catalog-list__title">Постер New Orlean vs Golden</h2>
+                                <h2 class="catalog-list__title">Постер New Orlean vs Golden Star</h2>
                                 <p class="catalog-list__text">Дизайн</p>
                             </div>
                         </a>
@@ -302,7 +343,8 @@
         </div>
     </div>
 </footer>
-
+<script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
