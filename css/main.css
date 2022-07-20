@@ -277,6 +277,12 @@ ul {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .list {
   list-style: none;
   font-style: normal;
@@ -336,8 +342,14 @@ ul {
 
 .section {
   margin: 0 auto;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-bg-color {
@@ -345,11 +357,17 @@ ul {
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .section__list {
@@ -362,7 +380,7 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .section__list {
     text-align: start;
   }
@@ -680,7 +698,7 @@ ul {
   max-width: 1600px;
   height: 400px;
   background-color: #C4C4C4;
-  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/set/hero/heromobil1x.jpg);
+  background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/set/hero/heromobil1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -961,6 +979,12 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .qualitys {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
+}
 
 .qualitys__list {
   display: block;
@@ -1210,6 +1234,11 @@ ul {
     width: calc((100% - 90px) / 3);
   }
 }
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    margin-top: 0;
+  }
+}
 
 .clients__link {
   display: flex;
@@ -1241,12 +1270,17 @@ ul {
 .filter-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 767px) {
   .filter-list {
     flex-wrap: wrap;
     justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter-list {
+    margin-bottom: 50px;
   }
 }
 
@@ -1282,6 +1316,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .catalog-list {
     gap: 30px;
+    margin: 0;
   }
 }
 
@@ -1434,6 +1469,11 @@ ul {
   padding-bottom: 60px;
   background-color: #2F303A;
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 0;
+  }
+}
 
 .contacts-footer {
   display: block;
@@ -1492,6 +1532,11 @@ ul {
   line-height: 1.14;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .footer-networks__title {
+    text-align: start;
+  }
 }
 
 .footer-networks__list {

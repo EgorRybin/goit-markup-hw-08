@@ -104,11 +104,11 @@
                 
                 <!-- фильтр -->
                 <ul class="filter-list list">
-                    <li class="filter-list__item"><button type="button" class="button button__secondary">Приложения</button></li>
                     <li class="filter-list__item"><button type="button" class="button button__secondary">Все</button></li>
+                    <li class="filter-list__item"><button type="button" class="button button__secondary">Веб-сайты</button></li>
+                    <li class="filter-list__item"><button type="button" class="button button__secondary">Приложения</button></li>
                     <li class="filter-list__item"><button type="button" class="button button__secondary">Дизайн</button></li>
                     <li class="filter-list__item"><button type="button" class="button button__secondary">Маркетинг</button></li>
-                    <li class="filter-list__item"><button type="button" class="button button__secondary">Веб-сайты</button></li>
                 </ul>
                 
                 <!-- каталог -->
@@ -116,7 +116,20 @@
                     <li class="catalog-list__item">
                         <a class="catalog-list__link" href="">
                             <div class="catalog-list__overlay">
-                                <img class="catalog-list__img" srcset="./images/set/catalog/tech1x.jpg 1x, ./images/set/catalog/tech2x.jpg 2x" src="./images/set/catalog/tech1x.jpg" alt="ноутбук с карточками на дисплее">
+                                                    <picture>
+                                                        <source srcset="./images/set2/catalog/tech/desk1x.jpg 1x, ./images/set2/catalog/tech/desk2x.jpg 2x "
+                                                            media="(min-width: 1200px)" />
+                                                    
+                                                        <source srcset="./images/set2/catalog/tech/tab1x.jpg 1x, ./images/set2/catalog/tech/tab2x.jpg 2x "
+                                                            media="(min-width: 768px)" />
+                                                    
+                                                        <source srcset="./images/set2/catalog/tech/mobil1x.jpg 1x, ./images/set2/catalog/tech/mobil2x.jpg 2x "
+                                                            media="(min-width: 480px)" />
+                                                    
+                                                        <img src="./images/set2/catalog/tech/mobil1x.jpg" alt="ноутбук">
+                                                    </picture>
+
+                                <!-- <img class="catalog-list__img" srcset="./images/set/catalog/tech1x.jpg 1x, ./images/set/catalog/tech2x.jpg 2x" src="./images/set/catalog/tech1x.jpg" alt="ноутбук с карточками на дисплее"> -->
                                 <p class="catalog-list__content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>
@@ -130,12 +143,24 @@
                 
                     <li class="catalog-list__item"><a href="" class="catalog-list__link">
                         <div class="catalog-list__overlay">
+                            <picture>
+                                <source srcset="./images/set2/catalog/bascket/desk1x.jpg 1x, ./images/set2/catalog/bascket/desk2x.jpg 2x "
+                                    media="(min-width: 1200px)" />
+                            
+                                <source srcset="./images/set2/catalog/bascket/tab1x.jpg 1x, ./images/set2/catalog/bascket/tab2x.jpg 2x "
+                                    media="(min-width: 768px)" />
+                            
+                                <source srcset="./images/set2/catalog/bascket/mobil1x.jpg 1x, ./images/set2/catalog/bascket/mobil2x.jpg 2x "
+                                    media="(min-width: 480px)" />
+                            
+                                <img src="./images/set2/catalog/bascket/mobil1x.jpg" alt="баскетболисты">
+                            </picture>
 
-                            <img class="catalog-list__img" 
+                            <!-- <img class="catalog-list__img" 
                             srcset="./images/set/catalog/bascket1x.jpg 1x, ./images/set/catalog/bascket2x.jpg 2x" 
                             src="./images/set/catalog/bascket1x.jpg" 
                             alt="баскетболисты" 
-                            >
+                            > -->
 
                             <p class="catalog-list__content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
@@ -151,7 +176,20 @@
                 
                     <li class="catalog-list__item"><a href="" class="catalog-list__link">
                         <div class="catalog-list__overlay">
-                            <img class="catalog-list__img" srcset="./images/set/catalog/fish1x.jpg 1x, ./images/set/catalog/fish2x.jpg 2x" src="./images/set/catalog/fish1x.jpg" alt="логотип с рыбой">
+                            <picture>
+                                <source srcset="./images/set2/catalog/fish/desk1x.jpg 1x, ./images/set2/catalog/fish/desk2x.jpg 2x "
+                                    media="(min-width: 1200px)" />
+                            
+                                <source srcset="./images/set2/catalog/fish/tab1x.jpg 1x, ./images/set2/catalog/fish/tab2x.jpg 2x "
+                                    media="(min-width: 768px)" />
+                            
+                                <source srcset="./images/set2/catalog/fish/mobil1x.jpg 1x, ./images/set2/catalog/fish/mobil2x.jpg 2x "
+                                    media="(min-width: 480px)" />
+                            
+                                <img src="./images/set2/catalog/fish/mobil1x.jpg" alt="рыба">
+                            </picture>
+
+                            <!-- <img class="catalog-list__img" srcset="./images/set/catalog/fish1x.jpg 1x, ./images/set/catalog/fish2x.jpg 2x" src="./images/set/catalog/fish1x.jpg" alt="логотип с рыбой"> -->
                             <p class="catalog-list__content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
@@ -167,7 +205,19 @@
                 
                     <li class="catalog-list__item"><a href="" class="catalog-list__link">
                         <div class="catalog-list__overlay">
-                            <img class="catalog-list__img" srcset="./images/set/catalog/prim1x.jpg 1x, ./images/set/catalog/prim2x.jpg 2x" src="./images/set/catalog/prim1x.jpg" alt="открытая книга">
+                            <picture>
+                                <source srcset="./images/set2/catalog/prime/desk1x.jpg 1x, ./images/set2/catalog/prime/desk2x.jpg 2x "
+                                    media="(min-width: 1200px)" />
+                            
+                                <source srcset="./images/set2/catalog/prime/tab1x.jpg 1x, ./images/set2/catalog/prime/tab2x.jpg 2x "
+                                    media="(min-width: 768px)" />
+                            
+                                <source srcset="./images/set2/catalog/prime/mobil1x.jpg 1x, ./images/set2/catalog/prime/mobil2x.jpg 2x "
+                                    media="(min-width: 480px)" />
+                            
+                                <img src="./images/set2/catalog/prime/mobil1x.jpg" alt="наушники">
+                            </picture>
+                            <!-- <img class="catalog-list__img" srcset="./images/set/catalog/prim1x.jpg 1x, ./images/set/catalog/prim2x.jpg 2x" src="./images/set/catalog/prim1x.jpg" alt="открытая книга"> -->
                             <p class="catalog-list__content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
@@ -183,7 +233,20 @@
                 
                     <li class="catalog-list__item"><a href="" class="catalog-list__link">
                         <div class="catalog-list__overlay">
-                            <img class="catalog-list__img" srcset="./images/set/catalog/box1x.jpg 1x, ./images/set/catalog/box2x.jpg 2x" src="./images/set/catalog/box1x.jpg" alt="две коробки">
+                            <picture>
+                            <source srcset="./images/set2/catalog/box/desk1x.jpg 1x, ./images/set2/catalog/box/desk2x.jpg 2x "
+                                media="(min-width: 1200px)" />
+                        
+                            <source srcset="./images/set2/catalog/box/tab1x.jpg 1x, ./images/set2/catalog/box/tab2x.jpg 2x "
+                                media="(min-width: 768px)" />
+                        
+                            <source srcset="./images/set2/catalog/box/mobil1x.jpg 1x, ./images/set2/catalog/box/mobil2x.jpg 2x "
+                                media="(min-width: 480px)" />
+                        
+                            <img src="./images/set2/catalog/box/mobil1x.jpg" alt="две коробки">
+                        </picture>
+
+                            <!-- <img class="catalog-list__img" srcset="./images/set/catalog/box1x.jpg 1x, ./images/set/catalog/box2x.jpg 2x" src="./images/set/catalog/box1x.jpg" alt="две коробки"> -->
                             <p class="catalog-list__content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
@@ -199,7 +262,19 @@
                 
                     <li class="catalog-list__item"><a href="" class="catalog-list__link">
                         <div class="catalog-list__overlay">
-                            <img class="catalog-list__img" srcset="./images/set/catalog/monitor1x.jpg 1x, ./images/set/catalog/monitor2x.jpg 2x" src="./images/set/catalog/monitor1x.jpg" alt="монитор">
+                            <picture>
+                                <source srcset="./images/set2/catalog/monitor/desk1x.jpg 1x, ./images/set2/catalog/monitor/desk2x.jpg 2x "
+                                    media="(min-width: 1200px)" />
+                            
+                                <source srcset="./images/set2/catalog/monitor/tab1x.jpg 1x, ./images/set2/catalog/monitor/tab2x.jpg 2x "
+                                    media="(min-width: 768px)" />
+                            
+                                <source srcset="./images/set2/catalog/monitor/mobil1x.jpg 1x, ./images/set2/catalog/monitor/mobil2x.jpg 2x "
+                                    media="(min-width: 480px)" />
+                            
+                                <img src="./images/set2/catalog/monitor/mobil1x.jpg" alt="монитор">
+                            </picture>
+                            <!-- <img class="catalog-list__img" srcset="./images/set/catalog/monitor1x.jpg 1x, ./images/set/catalog/monitor2x.jpg 2x" src="./images/set/catalog/monitor1x.jpg" alt="монитор"> -->
                             <p class="catalog-list__content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
@@ -215,7 +290,19 @@
                 
                     <li class="catalog-list__item"><a href="" class="catalog-list__link">
                         <div class="catalog-list__overlay">
-                            <img class="catalog-list__img" srcset="./images/set/catalog/book1x.jpg 1x, ./images/set/catalog/book2x.jpg 2x" src="./images/set/catalog/book1x.jpg" alt="открытая книга">
+                            <picture>
+                                <source srcset="./images/set2/catalog/book/desk1x.jpg 1x, ./images/set2/catalog/book/desk2x.jpg 2x "
+                                    media="(min-width: 1200px)" />
+                            
+                                <source srcset="./images/set2/catalog/book/tab1x.jpg 1x, ./images/set2/catalog/book/tab2x.jpg 2x "
+                                    media="(min-width: 768px)" />
+                            
+                                <source srcset="./images/set2/catalog/book/mobil1x.jpg 1x, ./images/set2/catalog/book/mobil2x.jpg 2x "
+                                    media="(min-width: 480px)" />
+                            
+                                <img src="./images/set2/catalog/book/mobil1x.jpg" alt="открытая книга">
+                            </picture>
+                            <!-- <img class="catalog-list__img" srcset="./images/set/catalog/book1x.jpg 1x, ./images/set/catalog/book2x.jpg 2x" src="./images/set/catalog/book1x.jpg" alt="открытая книга"> -->
                             <p class="catalog-list__content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
@@ -231,7 +318,19 @@
                 
                     <li class="catalog-list__item"><a href="" class="catalog-list__link">
                         <div class="catalog-list__overlay">
-                            <img class="catalog-list__img" srcset="./images/set/catalog/lab1x.jpg 1x, ./images/set/catalog/lab2x.jpg 2x" src="./images/set/catalog/lab1x.jpg" alt="ярлык">
+                            <picture>
+                                <source srcset="./images/set2/catalog/label/desk1x.jpg 1x, ./images/set2/catalog/label/desk2x.jpg 2x "
+                                    media="(min-width: 1200px)" />
+                            
+                                <source srcset="./images/set2/catalog/label/tab1x.jpg 1x, ./images/set2/catalog/label/tab2x.jpg 2x "
+                                    media="(min-width: 768px)" />
+                            
+                                <source srcset="./images/set2/catalog/label/mobil1x.jpg 1x, ./images/set2/catalog/label/mobil2x.jpg 2x "
+                                    media="(min-width: 480px)" />
+                            
+                                <img src="./images/set2/catalog/label/mobil1x.jpg" alt="мужик">
+                            </picture>
+                            <!-- <img class="catalog-list__img" srcset="./images/set/catalog/lab1x.jpg 1x, ./images/set/catalog/lab2x.jpg 2x" src="./images/set/catalog/lab1x.jpg" alt="ярлык"> -->
                             <p class="catalog-list__content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                 позволит посетителю получить
                                 исчерпывающие сведения о компании или частном лице.</p>
@@ -248,7 +347,19 @@
                     <li class="catalog-list__item">
                         <a href="" class="catalog-list__link">
                             <div class="catalog-list__overlay">
-                                <img class="catalog-list__img" srcset="./images/set/catalog/note1x.jpg 1x, ./images/set/catalog/note2x.jpg 2x" src="./images/set/catalog/note1x.jpg" alt="печать на клавиатуре">
+                                <picture>
+                                    <source srcset="./images/set2/catalog/note/desk1x.jpg 1x, ./images/set2/catalog/note/desk2x.jpg 2x "
+                                        media="(min-width: 1200px)" />
+                                
+                                    <source srcset="./images/set2/catalog/note/tab1x.jpg 1x, ./images/set2/catalog/note/tab2x.jpg 2x "
+                                        media="(min-width: 768px)" />
+                                
+                                    <source srcset="./images/set2/catalog/note/mobil1x.jpg 1x, ./images/set2/catalog/note/mobil2x.jpg 2x "
+                                        media="(min-width: 480px)" />
+                                
+                                    <img src="./images/set2/catalog/note/mobil1x.jpg" alt="ноутбук">
+                                </picture>
+                                <!-- <img class="catalog-list__img" srcset="./images/set/catalog/note1x.jpg 1x, ./images/set/catalog/note2x.jpg 2x" src="./images/set/catalog/note1x.jpg" alt="печать на клавиатуре"> -->
                                 <p class="catalog-list__content">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это
                                     позволит посетителю получить
                                     исчерпывающие сведения о компании или частном лице.</p>

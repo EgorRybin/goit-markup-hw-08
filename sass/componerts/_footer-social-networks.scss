@@ -13,6 +13,11 @@
     line-height: 1.14;
     text-transform: uppercase;
     color: $wite-color;
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+        
+    }
 }
 
 .footer-networks__list {
